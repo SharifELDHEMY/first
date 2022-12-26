@@ -1,1 +1,14 @@
+on:
+  push:
+    branches:
+      - master
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Login to Docker hub"
+
+        run: docker login --username os2022 --password dckr_pat_V5Jo5W1EuFhVzSfPYiHAMYKHRSE

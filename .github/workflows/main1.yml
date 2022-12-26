@@ -15,8 +15,8 @@ jobs:
 
     steps:
       - name:" testing git hub action "
-        run: pwd
+      run: pwd
 
-        
+
       - name:" print "
-        run: echo hello
+      run: echo hello
